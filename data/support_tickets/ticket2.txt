@@ -1,0 +1,1 @@
+Application crashes when uploading file. User needs technical support to resolve bug in upload feature.

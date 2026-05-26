@@ -1,0 +1,1 @@
+User reports login issue. Cannot access account after password reset. Error authentication failed.
