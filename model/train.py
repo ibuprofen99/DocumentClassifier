@@ -9,7 +9,7 @@ from sklearn.linear_model import LogisticRegression
 X = []
 y = []
 
-p = Path(r"C:\Users\Clark\source\repos\documentClassification\data")
+p = Path(__file__).parent / "data"
 
 for subdir in p.iterdir():
     label = subdir.name
@@ -29,7 +29,7 @@ X_vectors = vectorizer.fit_transform(X)
 model = LogisticRegression()
 model.fit(X_vectors, y)
 
-
+#save model
 import joblib
 
 joblib.dump(model, "model/model.pkl")

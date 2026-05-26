@@ -9,7 +9,6 @@ model = joblib.load("model/model.pkl")
 vectorizer = joblib.load("model/vectorizer.pkl")
 
 # file to test
-#file_path = Path(r"C:\Users\Clark\source\repos\documentClassification\data\support_tickets\ticket1.txt")
 file_path = Path(sys.argv[1])
 
 # preprocess
